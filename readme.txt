@@ -56,4 +56,21 @@ II. Thiết kế database
         - phone_number -> string -> 20 ký tự
         - subject_name -> string -> 200 ký tự
         - note -> string (varchar) -> độ dài tối đa -> 500 ký tự
-        
+    7. Quản lý đơn hàng
+        7.1 bảng order
+            - id: int -> khóa chính tự động tăng
+            - fulname
+            - email
+            - phone_number
+            - address
+            - note
+            - order_day: datetime -> thời điểm đặt hàng
+            - status: int -> (pending, approved, ...)
+        7.2 Bảng chi tiết đơn hàng
+            - id: int -> khóa chính tự động tăng
+            - order_id: int -> foreign key order(id)
+            - product_id: int foreign key -> product (id)
+            - price: int
+            - num: int -> số lượng sản phẩm
+            - total_money -> lưu tổng tiền của sản phẩm (price * num)
+            
