@@ -1,6 +1,6 @@
 <?php
 require_once ('config.php');
-
+echo 'Bạn đã kết nối dữ liệu thành công';
 function execute($sql) {
 	//save data into table
 	// open connection to database

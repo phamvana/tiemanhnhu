@@ -1,5 +1,6 @@
 <?php
-require_once ('../../db/dbhelper.php');
+echo __DIR__;
+require_once ('../db/dbhelper.php');
 ?>
 <!DOCTYPE html>
 <html>
