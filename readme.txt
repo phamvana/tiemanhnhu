@@ -44,7 +44,7 @@ II. Thiết kế database
         - description: longtext
         - create_at: datetime -> thời gian tạo
         - update_at: datetime -> thời gian chỉnh sửa
-    5. Bảng quản lý galery
+    5. Bảng quản lý gallery
         - id: int -> khóa chính tự động tăng
         - product_id -> int -> foreign key ->product(id)
         - thumbnail: string -> 500 ký tự
